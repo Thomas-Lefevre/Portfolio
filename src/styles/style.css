@@ -15,6 +15,17 @@ button {
   border: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.test {
+  width: 100%;
+  height: 50vh;
+  background-color: blanchedalmond;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -27,10 +38,6 @@ button {
   color: white;
   background: linear-gradient(to bottom, rgba(74, 74, 74, 0.6), rgba(0, 0, 0, 0));
   transition: background-color 0.3s ease-in-out;
-}
-.nav a {
-  color: white;
-  text-decoration: none;
 }
 .nav--black {
   background-color: black;
@@ -46,7 +53,12 @@ button {
   }
 }
 .nav__logo {
-  max-width: 100px;
+  max-width: 250px;
+}
+@media screen and (max-width: 767px) {
+  .nav__logo {
+    max-width: 150px;
+  }
 }
 .nav__links {
   margin-left: 20px;
@@ -92,6 +104,26 @@ button {
   .nav__action {
     margin-left: 20px;
   }
+}
+
+.footer {
+  padding: 2rem 5% 2rem 5%;
+  background-color: #0a0a0a;
+  color: white;
+  border-top: 2px solid #323232;
+}
+.footer__socials {
+  font-size: 1.8rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftLink {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

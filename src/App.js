@@ -1,10 +1,11 @@
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
       {/* navbar */}
-      <Nav/>
+      <Nav />
       <div className='test'></div>
 
       {/* banner */}
@@ -13,7 +14,7 @@ function App() {
 
       {/* quick view */}
 
-      {/* footer */}
+      <Footer />
     </div>
   );
 }
