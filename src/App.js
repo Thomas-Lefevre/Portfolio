@@ -7,7 +7,7 @@ import { Skills } from './data/data';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id='Accueil'>
       {/* navbar */}
       <Nav />
 
@@ -17,8 +17,8 @@ function App() {
       {/* <div className='test'></div> */}
 
       {/* rows */}
-      <Row title='Projets' Props={Projects}/>
-      <Row title='Compétences' Props={Skills}/>
+      <Row title='Projets' Props={Projects} id='Projets' />
+      <Row title='Compétences' Props={Skills} id='Compétences' />
 
       {/* quick view */}
 

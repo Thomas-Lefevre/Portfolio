@@ -57,6 +57,7 @@ export const Projects = [
         name: 'Reservia',
         github: 'https://github.com/Thomas-Lefevre/ThomasLefevre_2_10082021',
         image: 'thumbnail/Reservia.png',
+        screenshoot: 'projects/Reservia.png',
         description: 'Projet étudiant qui consiste à réaliser une interface statique en HTML/CSS d\'un site de réservation d\'hébergement et d\'activité.'
     },
     {
@@ -64,6 +65,7 @@ export const Projects = [
         name: 'OhMyFood',
         github: 'https://github.com/Thomas-Lefevre/ThomasLefevre_3_05082021',
         image: 'thumbnail/OhMyFood.png',
+        screenshoot: 'projects/OhMyFood.png',
         description: 'Projet étudiant qui consiste à réaliser une interface statique avec un spinner et des animations en HTML/CSS(SASS) d\'une application de commande de repas.'
     },
     {
@@ -71,6 +73,7 @@ export const Projects = [
         name: 'FishEye',
         github: 'https://github.com/Thomas-Lefevre/ThomasLefevre_6_05082021',
         image: 'thumbnail/FishEye.png',
+        screenshoot: 'projects/FishEye.png',
         description: 'Projet étudiant qui consiste à réaliser un site de photographes freelance, qui comprend une interface dynamique en HTML/CSS(SASS),accessible au personnes avec un handicap via une navigation au clavier et au lecteur d\'écran, une tri de photographes via des tags en JavaScript, une modale qui affiche les photographies en grand en JavaScript.'
     },
     {
@@ -78,6 +81,7 @@ export const Projects = [
         name: 'LesPetitsPlats',
         github: 'https://github.com/Thomas-Lefevre/ThomasLefevre_7_05082021',
         image: 'thumbnail/LesPetitsPlats.png',
+        screenshoot: 'projects/LesPetitsPlats.png',
         description: 'Projet étudiant qui consiste à réaliser un site de recettes de cuisine, qui comprend une interface dynamique en HTML/CSS(SASS), un algorithme de recherche qui permet de trier les recettes par leurs noms,ingrédients,appareils et ustensiles en JavaScript.'
     },
     {
@@ -85,6 +89,7 @@ export const Projects = [
         name: 'Kasa',
         github: 'https://github.com/Thomas-Lefevre/ThomasLefevre_11_05082021',
         image: 'thumbnail/Kasa.png',
+        screenshoot: 'projects/Kasa.png',
         description: 'Projet étudiant qui consiste à réaliser un site de location d\'appartements entre particuliers avec React, le site comprend une interface dynamique en HTML/CSS(SASS)'
     },
     {
@@ -92,6 +97,7 @@ export const Projects = [
         name: 'SportSee',
         github: 'https://github.com/Thomas-Lefevre/ThomasLefevre_12_05082021',
         image: 'thumbnail/SportSee.png',
+        screenshoot: 'projects/SportSee.png',
         description: 'Projet étudiant qui consiste à réaliser un tableau de bord d\'analytics avec React, qui comprend une interface dynamique en HTML/CSS(SASS), des graphiques dynamiques générés avec recharts, une documentation générée avec JsDoc'
     },
 ]

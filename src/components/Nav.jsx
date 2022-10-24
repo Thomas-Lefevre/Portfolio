@@ -26,14 +26,14 @@ function Nav() {
             <button className='nav__burger' onClick={handleClick}><FaBars /></button>
             <img src="./images/logoNetflix.png" className='nav__logo' alt="logo" />
             <nav className='nav__links'>
-                <a href="/" className="nav__link">
+                <a href="#Accueil" className="nav__link">
                     Accueil
                 </a>
-                <a href="/" className="nav__link">
-                    Séries
+                <a href="#Compétences" className="nav__link">
+                    Compétences
                 </a>
-                <a href="/" className="nav__link">
-                    Films
+                <a href="#Projets" className="nav__link">
+                    Projets
                 </a>
             </nav>
             <div className="nav__actions">
