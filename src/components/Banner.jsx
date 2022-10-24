@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { FaInfoCircle } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
+import { FaInfoCircle,FaGithub } from 'react-icons/fa'
 import QuickView from './QuickView';
 
 function Banner({ Projects }) {
@@ -19,11 +18,10 @@ function Banner({ Projects }) {
         backgroundSize: "cover",
         backgroundPosition: "center center"
     }
-    // const quickViewStyle = {
-    //     backgroundImage: `url(./images/${Projects[2].screenshoot})`,
-    //     backgroundSize: "cover",
-    //     backgroundPosition: "center center"
-    // }
+
+    function toggleModal() {
+        setPopup(!popup)
+    }
 
     return (
         <header className='banner' style={bannerStyle}>
@@ -32,10 +30,13 @@ function Banner({ Projects }) {
                 <p className="banner__description">{truncateText(Projects[2].description, 150)}</p>
                 <div className="banner__buttons">
                     <button className="banner__button banner__button--play" onClick={handleClickPopup}><FaInfoCircle className='banner__button__icon' /> Plus d'info</button>
-                    <button className="banner__button banner__button__github"><FaGithub className='banner__button__icon' />Github</button>
+                    <a href={Projects[2].github} rel='noreferrer' target="_blank">
+                        <button className="banner__button banner__button__github"> <FaGithub className='banner__button__icon' />Github</button>
+                    </a>
                 </div>
             </div>
-            {/* <QuickView Props={Projects[2]} popup={handleClickPopup} popupStatus={popup} /> */}
+            {popup ? <QuickView Props={Projects[2]} popup={handleClickPopup} toggle={toggleModal} popupStatus={popup} /> : null}
+
         </header>
     )
 }

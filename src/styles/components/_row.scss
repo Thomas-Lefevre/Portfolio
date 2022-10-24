@@ -9,13 +9,12 @@
 
     &__images {
         display: flex;
+        flex-direction: row-reverse;
         align-items: center;
         overflow-x: visible;
         overflow-y: hidden;
         width: 100%;
         padding: .5rem;
-        scrollbar-width: thin;
-        scrollbar-color: #111 transparent;
     
     }
 

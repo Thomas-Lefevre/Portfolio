@@ -1,9 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { FaBars } from 'react-icons/fa'
-import { FaSearch } from 'react-icons/fa'
-import { FaLinkedin } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
+import { FaBars ,FaGithub ,FaLinkedin} from 'react-icons/fa'
 
 function Nav() {
 
@@ -37,13 +34,10 @@ function Nav() {
                 </a>
             </nav>
             <div className="nav__actions">
-                <a href="/" className="nav__action">
-                    <FaSearch />
-                </a>
-                <a href="/" className="nav__action">
+                <a href="https://www.linkedin.com/in/thomas-lefevre76/" rel='noreferrer' target="_blank" className="nav__action">
                     <FaLinkedin />
                 </a>
-                <a href="/" className="nav__action">
+                <a href="https://github.com/Thomas-Lefevre" rel='noreferrer' target="_blank" className="nav__action">
                     <FaGithub />
                 </a>
             </div>

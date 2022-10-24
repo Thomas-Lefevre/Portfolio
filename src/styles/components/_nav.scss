@@ -49,9 +49,10 @@
                 display: flex;
                 flex-direction: column;
                 visibility: visible;
+                background-color: black;
                 width: 100%;
-                height: calc(100vh - 60px);
-                top: 60px;
+                height: calc(25vh - 50px);
+                top: 50px;
             }
         }
 

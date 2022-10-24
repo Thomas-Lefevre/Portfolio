@@ -21,33 +21,33 @@ export const Skills = [
     },
     {
         id: 5,
+        name: 'Sql',
+        image: 'skills/Sql.png',
+    },
+    {
+        id: 6,
         name: 'JavaScript',
         image: 'skills/Javascript.png',
     },
     {
-        id: 6,
-        name: 'React',
-        image: 'skills/React.png',
-    },
-    {
         id: 7,
-        name: 'Redux',
-        image: 'skills/Redux.png',
-    },
-    {
-        id: 8,
-        name: 'Jest',
-        image: 'skills/Jest.png',
-    },
-    {
-        id: 9,
         name: 'Rest',
         image: 'skills/Rest.png',
     },
     {
+        id: 8,
+        name: 'React',
+        image: 'skills/React.png',
+    },
+    {
+        id: 9,
+        name: 'Redux',
+        image: 'skills/Redux.png',
+    },
+    {
         id: 10,
-        name: 'Sql',
-        image: 'skills/Sql.png',
+        name: 'Jest',
+        image: 'skills/Jest.png',
     },
 ]
 
@@ -56,6 +56,7 @@ export const Projects = [
         id: 1,
         name: 'Reservia',
         github: 'https://github.com/Thomas-Lefevre/ThomasLefevre_2_10082021',
+        site:'https://thomas-lefevre.github.io/ThomasLefevre_2_10082021/',
         image: 'thumbnail/Reservia.png',
         screenshoot: 'projects/Reservia.png',
         description: 'Projet étudiant qui consiste à réaliser une interface statique en HTML/CSS d\'un site de réservation d\'hébergement et d\'activité.'
@@ -64,6 +65,7 @@ export const Projects = [
         id: 2,
         name: 'OhMyFood',
         github: 'https://github.com/Thomas-Lefevre/ThomasLefevre_3_05082021',
+        site:'https://thomas-lefevre.github.io/ThomasLefevre_3_05082021/',
         image: 'thumbnail/OhMyFood.png',
         screenshoot: 'projects/OhMyFood.png',
         description: 'Projet étudiant qui consiste à réaliser une interface statique avec un spinner et des animations en HTML/CSS(SASS) d\'une application de commande de repas.'
@@ -72,6 +74,7 @@ export const Projects = [
         id: 3,
         name: 'FishEye',
         github: 'https://github.com/Thomas-Lefevre/ThomasLefevre_6_05082021',
+        site:'https://thomas-lefevre.github.io/ThomasLefevre_6_05082021/',
         image: 'thumbnail/FishEye.png',
         screenshoot: 'projects/FishEye.png',
         description: 'Projet étudiant qui consiste à réaliser un site de photographes freelance, qui comprend une interface dynamique en HTML/CSS(SASS),accessible au personnes avec un handicap via une navigation au clavier et au lecteur d\'écran, une tri de photographes via des tags en JavaScript, une modale qui affiche les photographies en grand en JavaScript.'
@@ -80,6 +83,7 @@ export const Projects = [
         id: 4,
         name: 'LesPetitsPlats',
         github: 'https://github.com/Thomas-Lefevre/ThomasLefevre_7_05082021',
+        site:'https://thomas-lefevre.github.io/ThomasLefevre_7_05082021/',
         image: 'thumbnail/LesPetitsPlats.png',
         screenshoot: 'projects/LesPetitsPlats.png',
         description: 'Projet étudiant qui consiste à réaliser un site de recettes de cuisine, qui comprend une interface dynamique en HTML/CSS(SASS), un algorithme de recherche qui permet de trier les recettes par leurs noms,ingrédients,appareils et ustensiles en JavaScript.'
