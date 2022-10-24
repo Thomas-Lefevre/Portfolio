@@ -1,7 +1,7 @@
 .row {
     padding: 1rem 4%;
     color: white;
-    
+
     &__title {
         font-size: 1.7rem;
         padding: 0 .5rem;
@@ -15,17 +15,32 @@
         overflow-y: hidden;
         width: 100%;
         padding: .5rem;
-    
+
     }
 
-    &__image {
-        width: 300px;
-        padding: 0.5rem;
+    &__card {
+        position: relative;
         transition: transform 0.3s ease-in;
 
         &:hover {
             cursor: pointer;
             transform: scale(1.1);
+        }
+
+    }
+
+    &__image {
+        width: 300px;
+        padding: 0.5rem;
+
+        &__name {
+            position: absolute;
+            width: 95%;
+            bottom: 0.5rem;
+            left: 0.5rem;
+            background-color: black;
+            padding: 0.2rem;
+
         }
     }
 

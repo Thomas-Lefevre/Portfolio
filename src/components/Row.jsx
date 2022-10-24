@@ -7,10 +7,10 @@ function Rows({ title, Props, id }) {
   const [popup, setPopup] = useState(false);
   const [card, setCard] = useState({});
 
-  let testskill
+  let rowSkills
 
   if (title === "Compétences") {
-    testskill = title
+    rowSkills = title
   }
 
   function toggleModal() {
@@ -23,25 +23,31 @@ function Rows({ title, Props, id }) {
   }
 
   return (
-    testskill ?
-      <div className='row' id={id}>
+    rowSkills ?
+      <section className='row' id={id}>
         <h2 className='row__title'>{title}</h2>
         <div className='row__images'>
           {Props.map((prop) =>
-            <img src={(`./images/${prop.image}`)} alt={prop.name} className='row__image' key={prop.id} />
+            <article className='row__card' key={prop.id}>
+              <img src={(`./images/${prop.image}`)} alt={prop.name} className='row__image' />
+              <h4 className='row__image__name'>{prop.name}</h4>
+            </article>
           )}
         </div>
-      </div>
+      </section>
       :
-      <div className='row' id={id}>
+      <section className='row' id={id}>
         <h2 className='row__title'>{title}</h2>
         <div className='row__images'>
           {Props.map((prop) =>
-            <img src={(`./images/${prop.image}`)} alt={prop.name} className='row__image' onClick={() => handleClickPopup(prop)} key={prop.id} />
+            <article className='row__card' key={prop.id}>
+              <img src={(`./images/${prop.image}`)} alt={prop.name} className='row__image' onClick={() => handleClickPopup(prop)} />
+              <h4 className='row__image__name'>{prop.name}</h4>
+            </article>
           )}
         </div>
         {popup ? <QuickView Props={card} popup={popup} toggle={toggleModal} popupStatus={popup} /> : null}
-      </div>
+      </section>
   )
 }
 

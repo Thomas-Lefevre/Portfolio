@@ -29,6 +29,9 @@
 
 body {
   margin: 0;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sang", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: black;
 }
 
@@ -232,14 +235,25 @@ a {
   width: 100%;
   padding: 0.5rem;
 }
+.row__card {
+  position: relative;
+  transition: transform 0.3s ease-in;
+}
+.row__card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .row__image {
   width: 300px;
   padding: 0.5rem;
-  transition: transform 0.3s ease-in;
 }
-.row__image:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+.row__image__name {
+  position: absolute;
+  width: 95%;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  background-color: black;
+  padding: 0.2rem;
 }
 .row ::-webkit-scrollbar {
   appearance: none;

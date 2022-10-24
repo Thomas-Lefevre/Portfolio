@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaInfoCircle,FaGithub } from 'react-icons/fa'
+import { FaInfoCircle, FaGithub } from 'react-icons/fa'
 import QuickView from './QuickView';
 
 function Banner({ Projects }) {
@@ -36,7 +36,6 @@ function Banner({ Projects }) {
                 </div>
             </div>
             {popup ? <QuickView Props={Projects[2]} popup={handleClickPopup} toggle={toggleModal} popupStatus={popup} /> : null}
-
         </header>
     )
 }

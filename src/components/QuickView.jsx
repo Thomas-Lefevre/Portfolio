@@ -3,7 +3,6 @@ import { FaRegTimesCircle } from 'react-icons/fa'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
 function QuickView({ Props, toggle, popupStatus }) {
-    console.log(Props.site)
     const close = toggle
 
     const quickViewStyle = {
