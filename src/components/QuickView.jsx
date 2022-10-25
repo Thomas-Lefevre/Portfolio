@@ -6,7 +6,7 @@ function QuickView({ Props, toggle, popupStatus }) {
     const close = toggle
 
     const quickViewStyle = {
-        backgroundImage: `url(./images/${Props.screenshoot})`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/images/${Props.screenshoot})`,
         backgroundSize: "cover",
         backgroundPosition: "center center"
     }

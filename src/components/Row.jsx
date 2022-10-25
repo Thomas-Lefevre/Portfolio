@@ -13,6 +13,16 @@ function Rows({ title, Props, id }) {
     rowSkills = title
   }
 
+  function reverseProp(array) {
+    const propReversedArray = []
+    for (let i = array.length - 1; i >= 0; i--) {
+      propReversedArray.push(array[i])
+    }
+    return propReversedArray
+  }
+
+  const propReversed = reverseProp(Props)
+
   function toggleModal() {
     setPopup(!popup)
   }
@@ -27,9 +37,9 @@ function Rows({ title, Props, id }) {
       <section className='row' id={id}>
         <h2 className='row__title'>{title}</h2>
         <div className='row__images'>
-          {Props.map((prop) =>
+          {propReversed.map((prop) =>
             <article className='row__card' key={prop.id}>
-              <img src={(`./images/${prop.image}`)} alt={prop.name} className='row__image' />
+              <img src={(`${process.env.PUBLIC_URL}/images/${prop.image}`)} alt={prop.name} className='row__image' />
               <h4 className='row__image__name'>{prop.name}</h4>
             </article>
           )}
@@ -39,9 +49,9 @@ function Rows({ title, Props, id }) {
       <section className='row' id={id}>
         <h2 className='row__title'>{title}</h2>
         <div className='row__images'>
-          {Props.map((prop) =>
+          {propReversed.map((prop) =>
             <article className='row__card' key={prop.id}>
-              <img src={(`./images/${prop.image}`)} alt={prop.name} className='row__image' onClick={() => handleClickPopup(prop)} />
+              <img src={(`${process.env.PUBLIC_URL}/images/${prop.image}`)} alt={prop.name} className='row__image' onClick={() => handleClickPopup(prop)} />
               <h4 className='row__image__name'>{prop.name}</h4>
             </article>
           )}

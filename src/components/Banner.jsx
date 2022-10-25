@@ -14,7 +14,7 @@ function Banner({ Projects }) {
     }
 
     const bannerStyle = {
-        backgroundImage: `url(./images/${Projects[2].image})`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/images/${Projects[2].image})`,
         backgroundSize: "cover",
         backgroundPosition: "center center"
     }

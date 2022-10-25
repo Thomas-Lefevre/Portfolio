@@ -136,6 +136,7 @@ a {
   align-items: center;
   justify-content: flex-end;
   flex: 1;
+  font-size: 1.8rem;
 }
 .nav__action {
   margin-left: 10px;
@@ -228,7 +229,6 @@ a {
 }
 .row__images {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   overflow-x: visible;
   overflow-y: hidden;
@@ -324,8 +324,8 @@ a {
   align-items: center;
 }
 
-.leftLink {
-  margin-right: 1rem;
+.rightLink {
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

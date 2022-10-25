@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { FaBars ,FaGithub ,FaLinkedin} from 'react-icons/fa'
+import { FaBars, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 function Nav() {
 
@@ -21,7 +21,7 @@ function Nav() {
     return (
         <div className={`nav ${navBlack || toggleMenu ? "nav--black" : "nav--transparent"} ${toggleMenu && "show"}`}>
             <button className='nav__burger' onClick={handleClick}><FaBars /></button>
-            <img src="./images/logoNetflix.png" className='nav__logo' alt="logo" />
+            <img src={`${process.env.PUBLIC_URL}/images/logo.png`} className='nav__logo' alt="logo" />
             <nav className='nav__links'>
                 <a href="#Accueil" className="nav__link">
                     Accueil

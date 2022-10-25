@@ -9,8 +9,8 @@ function Footer() {
             <div className='container'>
                 <span className='footer__developer'>Développé par Thomas Lefevre</span>
                 <div className="footer__socials">
-                    <a href="https://github.com/Thomas-Lefevre" rel='noreferrer' target="_blank" className='footer__link leftLink'><FaGithub /></a>
                     <a href="https://www.linkedin.com/in/thomas-lefevre76/" rel='noreferrer' target="_blank" className='footer__link'><FaLinkedin /></a>
+                    <a href="https://github.com/Thomas-Lefevre" rel='noreferrer' target="_blank" className='footer__link rightLink'><FaGithub /></a>
                 </div>
             </div>
         </footer>
