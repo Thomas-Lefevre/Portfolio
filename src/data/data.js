@@ -104,4 +104,14 @@ export const Projects = [
         screenshoot: 'projects/SportSee.png',
         description: 'Projet étudiant qui consiste à réaliser un tableau de bord d\'analytics avec React, qui comprend une interface dynamique en HTML/CSS(SASS), des graphiques dynamiques générés avec recharts, une documentation générée avec JsDoc'
     },
+    {
+        id: 7,
+        name: 'PokemonCard',
+        github: 'https://github.com/Thomas-Lefevre/PokemonCardCss',
+        site:'https://thomas-lefevre.github.io/PokemonCardCss/',
+        image: 'thumbnail/PokemonCard.png',
+        screenshoot: 'projects/PokemonCard.png',
+        description: 'Carte Pokemon avec effet Holographique réalisé uniquement en CSS et Javascript'
+    },
+
 ]

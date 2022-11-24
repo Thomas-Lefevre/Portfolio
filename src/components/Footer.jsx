@@ -5,7 +5,6 @@ import { FaLinkedin } from 'react-icons/fa'
 function Footer() {
     return (
         <footer className='footer'>
-            {/* <img src={`./images/projects/${Projects[5].image}`} alt="saispas" /> */}
             <div className='container'>
                 <span className='footer__developer'>Développé par Thomas Lefevre</span>
                 <div className="footer__socials">
